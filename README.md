@@ -5,6 +5,18 @@ If you're reading this, you're probably working on a project that can't wait unt
 
 When Facebook solves [#436](https://github.com/facebook/react/issues/436) and [#1170](https://github.com/facebook/react/pull/1170), this repo will disappear.
 
+## Installation
+
+```sh
+$ npm i --save react-tap-event-plugin
+```
+
+Note that if you are using React 0.14 or lower, you need to use an older version:
+
+```sh
+$ npm i --save react-tap-event-plugin@0.2.2
+```
+
 ## Usage
 
 ```js
