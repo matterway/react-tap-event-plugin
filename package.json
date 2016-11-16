@@ -1,6 +1,6 @@
 {
   "name": "react-tap-event-plugin",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Facebook's TapEventPlugin, temporarily available on npm until its made public in their repo",
   "main": "src/injectTapEventPlugin.js",
   "files": ["src/"],
