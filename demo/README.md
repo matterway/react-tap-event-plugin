@@ -7,7 +7,7 @@ npm install
 
 ## Build
 ```
-browserify -t reactify application.js.jsx -o application.js
+npm run build
 ```
 
 ## Run
