@@ -3,7 +3,11 @@ You've probably heard of [iOS's dreaded 300ms tap delay](http://updates.html5roc
 
 If you're reading this, you're probably working on a project that can't wait until they figure out how they want to publish it.  This repo is for you.
 
-When Facebook solves [#436](https://github.com/facebook/react/issues/436) and [#1170](https://github.com/facebook/react/pull/1170), this repo will disappear.
+~~When Facebook solves [#436](https://github.com/facebook/react/issues/436) and [#1170](https://github.com/facebook/react/pull/1170), this repo will disappear.~~
+
+Facebook is not planning on supporting tap events ([#436](https://github.com/facebook/react/issues/436#issuecomment-207624448)) because browsers are fixing/removing the click delay. Unfortunately it will take a lot of time before all mobile browsers (including iOS' UIWebView) will and can be updated. 
+
+Verify if you need this plugin for the browsers you need to support.
 
 ## Installation
 
