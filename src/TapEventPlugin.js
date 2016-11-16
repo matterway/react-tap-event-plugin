@@ -132,6 +132,10 @@ function createTapEventPlugin(shouldRejectClick) {
       nativeEventTarget
     ) {
 
+      if (!isStartish(topLevelType) && !isEndish(topLevelType)) {
+        return null;
+      }
+
       if (isTouch(topLevelType)) {
         lastTouchEvent = now();
       } else {
@@ -140,9 +144,6 @@ function createTapEventPlugin(shouldRejectClick) {
         }
       }
 
-      if (!isStartish(topLevelType) && !isEndish(topLevelType)) {
-        return null;
-      }
       var event = null;
       var distance = getDistance(startCoords, nativeEvent);
       if (isEndish(topLevelType) && distance < tapMoveThreshold) {
