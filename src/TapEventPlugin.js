@@ -34,10 +34,10 @@ var isEndish = EventPluginUtils.isEndish;
 
 var isTouch = function(topLevelType) {
   var touchTypes = [
-    topLevelTypes.topTouchCancel,
-    topLevelTypes.topTouchEnd,
-    topLevelTypes.topTouchStart,
-    topLevelTypes.topTouchMove
+    'topTouchCancel',
+    'topTouchEnd',
+    'topTouchStart',
+    'topTouchMove'
   ];
   return touchTypes.indexOf(topLevelType) >= 0;
 }
@@ -76,16 +76,16 @@ function getDistance(coords, nativeEvent) {
 }
 
 var touchEvents = [
-  topLevelTypes.topTouchStart,
-  topLevelTypes.topTouchCancel,
-  topLevelTypes.topTouchEnd,
-  topLevelTypes.topTouchMove,
+  'topTouchStart',
+  'topTouchCancel',
+  'topTouchEnd',
+  'topTouchMove',
 ];
 
 var dependencies = [
-  topLevelTypes.topMouseDown,
-  topLevelTypes.topMouseMove,
-  topLevelTypes.topMouseUp,
+  'topMouseDown',
+  'topMouseMove',
+  'topMouseUp',
 ].concat(touchEvents);
 
 var eventTypes = {
