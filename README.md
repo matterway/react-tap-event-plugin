@@ -11,12 +11,17 @@ Verify if you need this plugin for the browsers you need to support.
 
 ## Installation
 
+Latest:
 ```sh
 $ npm i --save react-tap-event-plugin
 ```
 
-Note that if you are using React 0.14 or lower, you need to use an older version:
+Compatible with React > 0.14 && < 15.4:
+```sh
+$ npm i --save react-tap-event-plugin@1.0.0
+```
 
+Compatible with React <= 0.14:
 ```sh
 $ npm i --save react-tap-event-plugin@0.2.2
 ```
