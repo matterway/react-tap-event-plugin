@@ -46,7 +46,7 @@ var isTouch = function(topLevelType) {
  * Number of pixels that are tolerated in between a `touchStart` and `touchEnd`
  * in order to still be considered a 'tap' event.
  */
-var tapMoveThreshold = 10;
+var tapMoveThreshold = 20;
 var ignoreMouseThreshold = 750;
 var startCoords = {x: null, y: null};
 var lastTouchEvent = null;
